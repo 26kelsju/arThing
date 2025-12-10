@@ -10,11 +10,41 @@
 			<a-marker type="pattern" url="https://raw.githubusercontent.com/26kelsju/arThing/main/pattern-arMarker4.patt">
 			<!-- create your AR content here -->
 				
-				<a-box position="0 0 1" rotation="0 0 45" color="#ff0000"></a-box>
+				 
+	    <a-plane position="0 -5 -5" height="20" width="20" rotation="-90 0 0"></a-plane>
 	    
-				<a-cylinder position="0 0 0" rotation="90 0 0" radius="0.25" color="#008000"></a-cylinder>
+	    <a-box position="0 -4 -5" scale="15 1 15" color="red" animation="
+	    property:scale; 
+	    dir:alternate; 
+	    loop:true;
+	    from:15, 1, 15;
+	    to:20, 1, 20;
+	    dur:1000;
+	    autoplay:true;
+	    " ></a-box>
+	    <a-box position="0 -3 -5" scale="10 0.5 10" color="orange" animation="
+	    property:rotation;
+	    from:0 0 0;
+	    to:0 360 0;
+	    loop:true;
+	    autoplay:true;
+	    dur:2000;
+	    easing:linear;
+	    " ></a-box>
+	    <a-box position="0 -3 -5" scale="10 0.5 10" color="orange" animation="
+	    property:rotation;
+	    from:0 360 0;
+	    to:0 0 0;
+	    loop:true;
+	    autoplay:true;
+	    dur:2000;
+	    easing:linear;
+	    " ></a-box>
+	    
+	    
+	    
+	    <a-entity position="7 -2.5 -5" rotation="-90 0 0" text="value: Welcome to the Expo!!!!;" scale="25 25" ></a-entity>
 		
-				<a-cone position="0 0 -1"  rotation="-90 0 0" radius="0.4" color="#ff0000"></a-cone>
 			
 			</a-marker>
 
