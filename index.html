@@ -16,8 +16,8 @@
 	    property:scale; 
 	    dir:alternate; 
 	    loop:true;
-	    from:6, 1, 6;
-	    to:8, 1, 8;
+	    from:8, 1, 8;
+	    to:10, 1, 10;
 	    dur:1000;
 	    autoplay:true;
 	    " ></a-box>
@@ -51,6 +51,15 @@
 	    " ></a-torus>
 	    
 	    <a-entity position="2 -2.5 0" rotation="-90 0 0" text="value: Welcome to the Expo!!!!;" scale="9 9" ></a-entity>
+		
+		<a-entity rotation="0 0 0" animation="
+		property: rotation; 
+		easing:linear; 
+		to: 0 360 0; 
+		loop: true; 
+		dur: 2000;">
+        <a-sphere position="2 -3.5 0" color="mediumseagreen"></a-sphere>
+        </a-entity>
 		
 			
 			</a-marker>
